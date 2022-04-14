@@ -1,3 +1,73 @@
+
+/******************** TAG SELECTION ********************/
 body {
-  background-color: royalblue;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 50px;
+  color: #4C3023;
+  font-family: Papyrus;
+  margin-bottom: 0;
+}
+p {
+  color: #5E1609;
+  font-size: 25px;
+  font-family: Papyrus;
+  margin-top: 10px;
+}
+
+div {
+  /*background-color: #F2B017;*/
+  background-image: linear-gradient(#FF2222DD, #FFFF33DD);
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/******************** CLASS SELECTION ********************/
+.cloud {
+  width: 20%;
+  position: relative;
+}
+.sq {
+  width:100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.red{
+  background-color: red;
+  left: 200px;
+}
+.blue{
+  background-color: blue;
+  right:100px;
+}
+.yellow{
+  right: 105px;
+  background-color: yellow;
+}
+.centertext{
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+/******************** ID SELECTION ********************/
+#mountian {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+#topcloud {
+  left: 10%;
+  top: 50px;
+}
+#botcloud {
+  left: 70%;
+  top: 80px;
 }
