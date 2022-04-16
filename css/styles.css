@@ -1,23 +1,41 @@
-
+/*
+TODO: Float
+Colors: https://colorhunt.co/palette/ad8b73ceab93e3caa5fffbe9
+https://www.w3schools.com/colors/colors_picker.asp
+*/
 /******************** TAG SELECTION ********************/
 body {
   margin: 0;
   padding: 0;
 }
+h1, h2, h3, p{
+  color: #4C3023;
+}
+a {
+  color: black;
+}
 
 h1 {
-  font-size: 60px;
-  color: #4C3023;
-  font-family: Papyrus;
+  font-size: 5.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
 }
 p {
-  color: #5E1609;
-  font-size: 30px;
-  font-family: Papyrus;
 }
 
 div {
   padding: 0;
+}
+
+hr {
+  border-top: 10px dashed #403226;
+  border-bottom: 0px;
+  width: 30%;
 }
 
 img {
@@ -28,11 +46,34 @@ img {
 /******************** CLASS SELECTION ********************/
 .top-container {
   /*background-color: #F2B017;*/
-  background-image: linear-gradient(#FF2222DD, #FFFF33DD);
+  background-image: linear-gradient(#FF2222EE, #FFFF33DD);
   width: 100%;
-  min-height: 80vh;
+  min-height: 95vh;
   position: relative;
+}.middle-container {
+  /*background-color: #F2B017;*/
+  background-image: linear-gradient(#9D7B63, #CEAB93);
+  text-align: center;
+  width: 100%;
+  position: relative;
+}.bottom-container {
+  /*background-color: #F2B017;*/
+  background-image: linear-gradient(#CEAB93, #E3CAA5);
+  text-align: center;
+  min-height: 20vh;
+  width: 100%;
+  position: relative;
+  min-height: 20vh;
 }
+.skills, .profile {
+  margin-bottom: 5%;
+}
+.break {
+  height: 50px;
+  background-image: url("https://media.istockphoto.com/vectors/creative-vector-seamless-pattern-vector-id975589890?k=20&m=975589890&s=612x612&w=0&h=2acWhh0ASGWI7vRqofWthsp2UqagVUCQqdmUQLyAs3Y=");
+  background-repeat: repeat-x;
+}
+
 .text {
   display: block;
   position: absolute;
@@ -40,17 +81,25 @@ img {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
+  font-family: 'Caveat Brush',Papyrus, cursive;
 }
+.standard_text{
+  font-family: sans-serif;
+  color: #FFFBE9;
+  width: 70%;
+  margin: auto;
+}
+.text h2 {
+  color: #5E1609;
+}
+.text h1 {
+  color: #4C3023;
+}
+
 
 .cloud {
   width: 20%;
   position: absolute;
-}
-.sq {
-  width:100px;
-  height: 100px;
-  display: inline-block;
-  position: relative;
 }
 .centertext{
   margin: 0;
@@ -69,4 +118,8 @@ img {
 #botcloud {
   left: 70%;
   top: 40%;
+}
+#profile_pic {
+  margin-top: 5%;
+  width: 30%;
 }
