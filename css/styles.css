@@ -1,31 +1,34 @@
-/*
-TODO: Float
-Colors: https://colorhunt.co/palette/ad8b73ceab93e3caa5fffbe9
-https://www.w3schools.com/colors/colors_picker.asp
-*/
 /******************** TAG SELECTION ********************/
 body {
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, p{
-  color: #4C3023;
+h1, h2, h3{
+  color: #462c20;
 }
 a {
-  color: black;
+  font-family: sans-serif;
+  color: #4C3023;
+  font-size: 1.2rem;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 h1 {
   font-size: 5.5rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: normal;
 }
 p {
+  font-family: sans-serif;
+  color: #FFFBE9;
+  margin: auto;
+  font-size: 1.2rem;
 }
 
 div {
@@ -58,18 +61,40 @@ img {
   position: relative;
 }.bottom-container {
   /*background-color: #F2B017;*/
-  background-image: linear-gradient(#CEAB93, #E3CAA5);
+  vertical-align: middle;
+  background-color: #E3CAA5;
   text-align: center;
   min-height: 20vh;
   width: 100%;
   position: relative;
-  min-height: 20vh;
 }
-.skills, .profile {
-  margin-bottom: 5%;
+.bot-items {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 10px;
+  background-image: linear-gradient(#D2792E, #924910);
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #E3D18A;
+}
+.btn:hover{
+  background-image: linear-gradient(#C2691E, #823910);
+  box-shadow: 0 0 10px #00000066;
+}
+.skills, .profile, .contact-me{
+  padding-bottom: 4%;
+  padding-top: 2%;
 }
 .break {
-  height: 50px;
+  height: 8vh;
   background-image: url("https://media.istockphoto.com/vectors/creative-vector-seamless-pattern-vector-id975589890?k=20&m=975589890&s=612x612&w=0&h=2acWhh0ASGWI7vRqofWthsp2UqagVUCQqdmUQLyAs3Y=");
   background-repeat: repeat-x;
 }
@@ -81,14 +106,24 @@ img {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
-  font-family: 'Caveat Brush',Papyrus, cursive;
+  font-family: Papyrus, cursive;
 }
-.standard_text{
-  font-family: sans-serif;
-  color: #FFFBE9;
+.skill-row, .profile{
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
+.skill-row {
+  padding: 1%;
+  text-align: left;
+  margin-bottom: 5%;
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url("https://cdn.pixabay.com/photo/2020/06/19/09/40/digital-paper-5316504_960_720.jpg") 30 round;
+  background-image: url("../res/texture.png");
+  min-height: 14vw;
+}
+
+
 .text h2 {
   color: #5E1609;
 }
@@ -122,4 +157,14 @@ img {
 #profile_pic {
   margin-top: 5%;
   width: 30%;
+}
+#swdev-img, #webdev-img{
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+#security-img {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
 }
